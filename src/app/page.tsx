@@ -11,11 +11,11 @@ export default function Home() {
       <div>
         Go through below exercise:
       </div>
-      <div className="py-2"/>
+      <div className="py-5"/>
       <div>
         <Link href={'/caching'}>
           <button className="border rounded px-2 py-1 hover:bg-slate-800">
-            Learn about caching!
+            1. Cache
           </button>
         </Link>
       </div>
