@@ -13,8 +13,7 @@ export default function Page() {
       </div>
       <div className="py-2"/>
       <div>
-        For the purpose, the timestamps are fetched with 2 second delay. If you see <span
-        className="italic">"Loading..."</span>, you are seeing none cached data and waiting to be fetched.
+        For the purpose, the timestamps are fetched with 2 second delay.
       </div>
       <div className="py-2"/>
       <div>This is not cached cache:</div>
@@ -51,7 +50,7 @@ async function NotCachedTimestamp() {
   </>
 }
 
-async function CachedTimestamp(props: {tag: string}) {
+async function CachedTimestamp(props: { tag: string }) {
   const unixTimestamp = await unstable_cache(
     () => action.getCurrentDateInUnix(),
     [props.tag],
