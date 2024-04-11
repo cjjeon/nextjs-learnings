@@ -22,8 +22,10 @@ export default function Page() {
       </div>
       <div className="py-2"/>
       <div>
-        NextJS caching is one subject that it confuses a lot of people. The data fetched in the page is somewhat cached.
-        And, there are multiple ways to re-fetch the data.
+        This is exact same exercise of the data fetched in the <Link href='/caching'><span
+        className="text-blue-500 hover:underline">cache page</span></Link>. The only difference is that this page is
+        forced dynamic page. Unlike caching page without dynamic, <Tag>Router Refresh Button</Tag> will now update
+        un-tagged cached data in production.
       </div>
       <div className="py-5"/>
       <div>
@@ -54,26 +56,6 @@ export default function Page() {
       <RevalidateTagButton tag={'cache-1'}/>
       <div className="py-2"/>
       <RevalidateTagButton tag={'cache-2'}/>
-      <div className="py-5"/>
-      <div className="font-bold underline">
-        Observation
-      </div>
-      <div>
-        This page behave very differently from <Tag>dev</Tag> and <Tag>prod</Tag>.
-      </div>
-      <div>
-        Router Refresh
-      </div>
-      <div>
-        Router refresh fetches the data after an update. In dev environment, the first timestamp will be refreshed all
-        the time. However, in production, this value will not be changed after it&apos;s fetched once.
-      </div>
-      <div>
-        Revalidate Tag
-      </div>
-      <div>
-        This behaves the same in both dev and prod. The data will be updated for specific tagged and non-tagged data.
-      </div>
     </div>
   );
 }
