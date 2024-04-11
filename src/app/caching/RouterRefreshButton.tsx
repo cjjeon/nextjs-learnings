@@ -11,10 +11,11 @@ export default function RouterRefreshButton() {
 
   return (
     <>
-      <div className="font-semibold">Router Refresh</div>
+      <div className="font-semibold">Router Refresh Button</div>
       <div>
-        This is router refresh button. It&apos;s just calling NextJS navigation router.refresh() function.
+        This does <span className="bg-slate-800 rounded p-1 font-semibold">router.refresh()</span>.
       </div>
+      <div className="py-1"/>
       <button className="border rounded hover:bg-slate-800 px-2 py-1" onClick={onClick}>
         Router Refresh Button
       </button>
