@@ -23,8 +23,12 @@ export default function Page() {
       <div className="py-2"/>
       <div>
         This is exact same exercise of the data fetched in the <Link href='/caching'><span
-        className="text-blue-500 hover:underline">cache page</span></Link>. The only difference is that this page is
-        forced dynamic page. Unlike caching page without dynamic, <Tag>Router Refresh Button</Tag> will now update
+        className="text-blue-500 hover:underline">cache page</span></Link>. This means <Tag>const dynamic =
+        'force-dynamic'</Tag> is added on the top of the component
+      </div>
+      <div className="py-2"/>
+      <div>
+        Unlike caching page without dynamic, <Tag>Router Refresh Button</Tag> will now update
         un-tagged cached data in production.
       </div>
       <div className="py-5"/>
