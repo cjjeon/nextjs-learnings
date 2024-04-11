@@ -65,13 +65,13 @@ export default function Page() {
       </div>
       <div>
         Router refresh fetches the data after an update. In dev environment, the first timestamp will be refreshed all
-        the time. However, in production, this value will not be changed after it's fetched once.
+        the time. However, in production, this value will not be changed after it&apos;s fetched once.
       </div>
       <div>
         Revalidate Tag
       </div>
       <div>
-        This behaves the same in both dev and prod where it refetch both tagged and non-tagged cached data.
+        This behaves the same in both dev and prod. The data will be updated for specific tagged and non-tagged data.
       </div>
     </div>
   );
