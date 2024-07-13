@@ -44,6 +44,7 @@ export function SearchParamProvider(props: {
     }, [params, urlParams])
 
     useEffect(() => {
+        // @ts-ignore
         const urlParams = new URLSearchParams(params)
         router.replace(pathname + '?' + urlParams.toString(), {scroll: false})
     }, [params])
