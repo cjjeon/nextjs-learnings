@@ -27,6 +27,11 @@ export default function Home() {
                         3. Unstable Cache
                     </button>
                 </Link>
+                <Link href={'/loading-streaming'}>
+                    <button className="border rounded px-2 py-1 hover:bg-slate-800">
+                        4. Loading and Streaming
+                    </button>
+                </Link>
             </div>
         </>
     );
